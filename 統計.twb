@@ -1,0 +1,1696 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0615.2100                               -->
+<workbook original-version='10.3' source-build='10.3.1 (10300.17.0615.2100)' source-platform='mac' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dataset_sogo_master' inline='true' name='federated.1k4lseu1q7iizr1ck0ruw0p4qtyw' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset_sogo_master' name='textscan.1dw0cwv1t382zh1bwj73n1nadzjo'>
+            <connection class='textscan' directory='/Volumes/SD Card/Workspace/R/BrainPad_Seminar' filename='dataset_sogo_master.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dw0cwv1t382zh1bwj73n1nadzjo' name='dataset_sogo_master.csv' table='[dataset_sogo_master#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='integer' name='gender' ordinal='1' />
+            <column datatype='string' name='gender_type' ordinal='2' />
+            <column datatype='integer' name='birthday' ordinal='3' />
+            <column datatype='integer' name='age' ordinal='4' />
+            <column datatype='string' name='state' ordinal='5' />
+            <column datatype='string' name='state_block' ordinal='6' />
+            <column datatype='date' name='create_date' ordinal='7' />
+            <column datatype='string' name='create_dayoftheweek' ordinal='8' />
+            <column datatype='string' name='create_timezone' ordinal='9' />
+            <column datatype='integer' name='first_reg_interval' ordinal='10' />
+            <column datatype='date' name='first_reg_date' ordinal='11' />
+            <column datatype='string' name='first_reg_dayoftheweek' ordinal='12' />
+            <column datatype='string' name='first_reg_timezone' ordinal='13' />
+            <column datatype='date' name='second_reg_date' ordinal='14' />
+            <column datatype='integer' name='second_reg_interval' ordinal='15' />
+            <column datatype='integer' name='reg_cnt' ordinal='16' />
+            <column datatype='string' name='shop_name' ordinal='17' />
+            <column datatype='integer' name='count_all' ordinal='18' />
+            <column datatype='integer' name='price_all' ordinal='19' />
+            <column datatype='integer' name='count_その他' ordinal='20' />
+            <column datatype='integer' name='count_教養娯楽費' ordinal='21' />
+            <column datatype='integer' name='count_交際費' ordinal='22' />
+            <column datatype='integer' name='count_交通費' ordinal='23' />
+            <column datatype='integer' name='count_車関連費' ordinal='24' />
+            <column datatype='integer' name='count_住宅費' ordinal='25' />
+            <column datatype='integer' name='count_食費' ordinal='26' />
+            <column datatype='integer' name='count_水道光熱費' ordinal='27' />
+            <column datatype='integer' name='count_税金' ordinal='28' />
+            <column datatype='integer' name='count_通信費' ordinal='29' />
+            <column datatype='integer' name='count_日用品費' ordinal='30' />
+            <column datatype='integer' name='count_被服費' ordinal='31' />
+            <column datatype='integer' name='count_美容健康費' ordinal='32' />
+            <column datatype='integer' name='count_保険費' ordinal='33' />
+            <column datatype='integer' name='count_養育費' ordinal='34' />
+            <column datatype='integer' name='PRICE_その他' ordinal='35' />
+            <column datatype='integer' name='PRICE_教養娯楽費' ordinal='36' />
+            <column datatype='integer' name='PRICE_交際費' ordinal='37' />
+            <column datatype='integer' name='PRICE_交通費' ordinal='38' />
+            <column datatype='integer' name='PRICE_車関連費' ordinal='39' />
+            <column datatype='integer' name='PRICE_住宅費' ordinal='40' />
+            <column datatype='integer' name='PRICE_食費' ordinal='41' />
+            <column datatype='integer' name='PRICE_水道光熱費' ordinal='42' />
+            <column datatype='integer' name='PRICE_税金' ordinal='43' />
+            <column datatype='integer' name='PRICE_通信費' ordinal='44' />
+            <column datatype='integer' name='PRICE_日用品費' ordinal='45' />
+            <column datatype='integer' name='PRICE_被服費' ordinal='46' />
+            <column datatype='integer' name='PRICE_美容健康費' ordinal='47' />
+            <column datatype='integer' name='PRICE_保険費' ordinal='48' />
+            <column datatype='integer' name='PRICE_養育費' ordinal='49' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender_type]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>gender_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birthday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birthday]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>birthday</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_block</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_block]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>state_block</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>create_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[create_date]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>create_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>create_dayoftheweek</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[create_dayoftheweek]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>create_dayoftheweek</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>create_timezone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[create_timezone]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>create_timezone</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_reg_interval</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[first_reg_interval]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>first_reg_interval</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_reg_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[first_reg_date]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>first_reg_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_reg_dayoftheweek</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first_reg_dayoftheweek]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>first_reg_dayoftheweek</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_reg_timezone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first_reg_timezone]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>first_reg_timezone</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>second_reg_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[second_reg_date]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>second_reg_date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>second_reg_interval</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[second_reg_interval]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>second_reg_interval</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reg_cnt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reg_cnt]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>reg_cnt</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shop_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shop_name]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>shop_name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_all</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_all]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_all</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_all</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price_all]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>price_all</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_その他</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_その他]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_その他</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_教養娯楽費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_教養娯楽費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_教養娯楽費</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_交際費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_交際費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_交際費</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_交通費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_交通費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_交通費</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_車関連費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_車関連費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_車関連費</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_住宅費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_住宅費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_住宅費</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_食費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_食費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_食費</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_水道光熱費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_水道光熱費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_水道光熱費</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_税金</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_税金]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_税金</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_通信費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_通信費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_通信費</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_日用品費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_日用品費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_日用品費</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_被服費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_被服費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_被服費</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_美容健康費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_美容健康費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_美容健康費</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_保険費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_保険費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_保険費</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_養育費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_養育費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>count_養育費</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_その他</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_その他]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_その他</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_教養娯楽費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_教養娯楽費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_教養娯楽費</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_交際費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_交際費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_交際費</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_交通費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_交通費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_交通費</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_車関連費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_車関連費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_車関連費</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_住宅費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_住宅費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_住宅費</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_食費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_食費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_食費</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_水道光熱費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_水道光熱費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_水道光熱費</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_税金</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_税金]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_税金</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_通信費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_通信費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_通信費</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_日用品費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_日用品費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_日用品費</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_被服費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_被服費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_被服費</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_美容健康費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_美容健康費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_美容健康費</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_保険費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_保険費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_保険費</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE_養育費</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRICE_養育費]</local-name>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias>PRICE_養育費</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dataset_sogo_master.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[1回の購入金額 (ビン)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[Calculation_69665080570122242]' peg='0' size='100' />
+      </column>
+      <column caption='1回の購入金額' datatype='real' name='[Calculation_69665080570122242]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[price_all]/[count_all]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Price その他' datatype='integer' name='[PRICE_その他]' role='measure' type='quantitative' />
+      <column caption='Price 交通費' datatype='integer' name='[PRICE_交通費]' role='measure' type='quantitative' />
+      <column caption='Price 交際費' datatype='integer' name='[PRICE_交際費]' role='measure' type='quantitative' />
+      <column caption='Price 住宅費' datatype='integer' name='[PRICE_住宅費]' role='measure' type='quantitative' />
+      <column caption='Price 保険費' datatype='integer' name='[PRICE_保険費]' role='measure' type='quantitative' />
+      <column caption='Price 教養娯楽費' datatype='integer' name='[PRICE_教養娯楽費]' role='measure' type='quantitative' />
+      <column caption='Price 日用品費' datatype='integer' name='[PRICE_日用品費]' role='measure' type='quantitative' />
+      <column caption='Price 水道光熱費' datatype='integer' name='[PRICE_水道光熱費]' role='measure' type='quantitative' />
+      <column caption='Price 税金' datatype='integer' name='[PRICE_税金]' role='measure' type='quantitative' />
+      <column caption='Price 美容健康費' datatype='integer' name='[PRICE_美容健康費]' role='measure' type='quantitative' />
+      <column caption='Price 被服費' datatype='integer' name='[PRICE_被服費]' role='measure' type='quantitative' />
+      <column caption='Price 車関連費' datatype='integer' name='[PRICE_車関連費]' role='measure' type='quantitative' />
+      <column caption='Price 通信費' datatype='integer' name='[PRICE_通信費]' role='measure' type='quantitative' />
+      <column caption='Price 食費' datatype='integer' name='[PRICE_食費]' role='measure' type='quantitative' />
+      <column caption='Price 養育費' datatype='integer' name='[PRICE_養育費]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Price All (ビン)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[price_all]' peg='0' size='100' />
+      </column>
+      <column datatype='integer' name='[Reg Cnt (ビン)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[reg_cnt]' peg='0' size='134' />
+      </column>
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Birthday' datatype='integer' name='[birthday]' role='measure' type='quantitative' />
+      <column caption='Count All' datatype='integer' name='[count_all]' role='measure' type='quantitative' />
+      <column caption='Count その他' datatype='integer' name='[count_その他]' role='measure' type='quantitative' />
+      <column caption='Count 交通費' datatype='integer' name='[count_交通費]' role='measure' type='quantitative' />
+      <column caption='Count 交際費' datatype='integer' name='[count_交際費]' role='measure' type='quantitative' />
+      <column caption='Count 住宅費' datatype='integer' name='[count_住宅費]' role='measure' type='quantitative' />
+      <column caption='Count 保険費' datatype='integer' name='[count_保険費]' role='measure' type='quantitative' />
+      <column caption='Count 教養娯楽費' datatype='integer' name='[count_教養娯楽費]' role='measure' type='quantitative' />
+      <column caption='Count 日用品費' datatype='integer' name='[count_日用品費]' role='measure' type='quantitative' />
+      <column caption='Count 水道光熱費' datatype='integer' name='[count_水道光熱費]' role='measure' type='quantitative' />
+      <column caption='Count 税金' datatype='integer' name='[count_税金]' role='measure' type='quantitative' />
+      <column caption='Count 美容健康費' datatype='integer' name='[count_美容健康費]' role='measure' type='quantitative' />
+      <column caption='Count 被服費' datatype='integer' name='[count_被服費]' role='measure' type='quantitative' />
+      <column caption='Count 車関連費' datatype='integer' name='[count_車関連費]' role='measure' type='quantitative' />
+      <column caption='Count 通信費' datatype='integer' name='[count_通信費]' role='measure' type='quantitative' />
+      <column caption='Count 食費' datatype='integer' name='[count_食費]' role='measure' type='quantitative' />
+      <column caption='Count 養育費' datatype='integer' name='[count_養育費]' role='measure' type='quantitative' />
+      <column caption='Create Date' datatype='date' name='[create_date]' role='dimension' type='ordinal' />
+      <column caption='Create Dayoftheweek' datatype='string' name='[create_dayoftheweek]' role='dimension' type='nominal' />
+      <column caption='Create Timezone' datatype='string' name='[create_timezone]' role='dimension' type='nominal' />
+      <column caption='First Reg Date' datatype='date' name='[first_reg_date]' role='dimension' type='ordinal' />
+      <column caption='First Reg Dayoftheweek' datatype='string' name='[first_reg_dayoftheweek]' role='dimension' type='nominal' />
+      <column caption='First Reg Interval' datatype='integer' name='[first_reg_interval]' role='measure' type='quantitative' />
+      <column caption='First Reg Timezone' datatype='string' name='[first_reg_timezone]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+      <column caption='Gender Type' datatype='string' name='[gender_type]' role='dimension' type='nominal' />
+      <column caption='Price All' datatype='integer' name='[price_all]' role='measure' type='quantitative' />
+      <column caption='Reg Cnt' datatype='integer' name='[reg_cnt]' role='measure' type='quantitative' />
+      <column caption='Second Reg Date' datatype='date' name='[second_reg_date]' role='dimension' type='ordinal' />
+      <column caption='Second Reg Interval' datatype='integer' name='[second_reg_interval]' role='measure' type='quantitative' />
+      <column caption='Shop Name' datatype='string' name='[shop_name]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Block' datatype='string' name='[state_block]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.61426' measure-ordering='alphabetic' measure-percentage='0.38574' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='user_id' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='gender_type' />
+        <field-sort-custom-order field='birthday' />
+        <field-sort-custom-order field='age' />
+        <field-sort-custom-order field='state' />
+        <field-sort-custom-order field='state_block' />
+        <field-sort-custom-order field='create_date' />
+        <field-sort-custom-order field='create_dayoftheweek' />
+        <field-sort-custom-order field='create_timezone' />
+        <field-sort-custom-order field='first_reg_interval' />
+        <field-sort-custom-order field='first_reg_date' />
+        <field-sort-custom-order field='first_reg_dayoftheweek' />
+        <field-sort-custom-order field='first_reg_timezone' />
+        <field-sort-custom-order field='second_reg_date' />
+        <field-sort-custom-order field='Calculation_69665080550666240' />
+        <field-sort-custom-order field='second_reg_interval' />
+        <field-sort-custom-order field='reg_cnt' />
+        <field-sort-custom-order field='shop_name' />
+        <field-sort-custom-order field='count_all' />
+        <field-sort-custom-order field='price_all' />
+        <field-sort-custom-order field='Calculation_69665080570122242' />
+        <field-sort-custom-order field='Calculation_69665080552935425' />
+        <field-sort-custom-order field='count_その他' />
+        <field-sort-custom-order field='count_教養娯楽費' />
+        <field-sort-custom-order field='count_交際費' />
+        <field-sort-custom-order field='count_交通費' />
+        <field-sort-custom-order field='count_車関連費' />
+        <field-sort-custom-order field='count_住宅費' />
+        <field-sort-custom-order field='count_食費' />
+        <field-sort-custom-order field='count_水道光熱費' />
+        <field-sort-custom-order field='count_税金' />
+        <field-sort-custom-order field='count_通信費' />
+        <field-sort-custom-order field='count_日用品費' />
+        <field-sort-custom-order field='count_被服費' />
+        <field-sort-custom-order field='count_美容健康費' />
+        <field-sort-custom-order field='count_保険費' />
+        <field-sort-custom-order field='count_養育費' />
+        <field-sort-custom-order field='PRICE_その他' />
+        <field-sort-custom-order field='PRICE_教養娯楽費' />
+        <field-sort-custom-order field='PRICE_交際費' />
+        <field-sort-custom-order field='PRICE_交通費' />
+        <field-sort-custom-order field='PRICE_車関連費' />
+        <field-sort-custom-order field='PRICE_住宅費' />
+        <field-sort-custom-order field='PRICE_食費' />
+        <field-sort-custom-order field='PRICE_水道光熱費' />
+        <field-sort-custom-order field='PRICE_税金' />
+        <field-sort-custom-order field='PRICE_通信費' />
+        <field-sort-custom-order field='PRICE_日用品費' />
+        <field-sort-custom-order field='PRICE_被服費' />
+        <field-sort-custom-order field='PRICE_美容健康費' />
+        <field-sort-custom-order field='PRICE_保険費' />
+        <field-sort-custom-order field='PRICE_養育費' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1回購入金額'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_sogo_master' name='federated.1k4lseu1q7iizr1ck0ruw0p4qtyw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k4lseu1q7iizr1ck0ruw0p4qtyw'>
+            <column datatype='integer' name='[1回の購入金額 (ビン)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='2' formula='[Calculation_69665080570122242]' peg='0' size='100' />
+            </column>
+            <column caption='1回の購入金額' datatype='real' name='[Calculation_69665080570122242]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[price_all]/[count_all]' />
+            </column>
+            <column-instance column='[Calculation_69665080570122242]' derivation='Count' name='[cnt:Calculation_69665080570122242:qk]' pivot='key' type='quantitative' />
+            <column caption='Count All' datatype='integer' name='[count_all]' role='measure' type='quantitative' />
+            <column-instance column='[1回の購入金額 (ビン)]' derivation='None' name='[none:1回の購入金額 (ビン):qk]' pivot='key' type='quantitative' />
+            <column caption='Price All' datatype='integer' name='[price_all]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:1回の購入金額 (ビン):qk]' field-type='quantitative' max='7000.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='subtitle' class='0' field='[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:1回の購入金額 (ビン):qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:1回の購入金額 (ビン):qk]' scope='cols' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[cnt:Calculation_69665080570122242:qk]</rows>
+        <cols>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:1回の購入金額 (ビン):qk]</cols>
+        <show-full-range>
+          <column>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[1回の購入金額 (ビン)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='レシートの登録回数'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_sogo_master' name='federated.1k4lseu1q7iizr1ck0ruw0p4qtyw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k4lseu1q7iizr1ck0ruw0p4qtyw'>
+            <column datatype='integer' name='[Reg Cnt (ビン)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='2' formula='[reg_cnt]' peg='0' size='134' />
+            </column>
+            <column-instance column='[reg_cnt]' derivation='Count' name='[cnt:reg_cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reg Cnt (ビン)]' derivation='None' name='[none:Reg Cnt (ビン):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[shop_name]' derivation='None' name='[none:shop_name:nk]' pivot='key' type='nominal' />
+            <column caption='Reg Cnt' datatype='integer' name='[reg_cnt]' role='measure' type='quantitative' />
+            <column caption='Shop Name' datatype='string' name='[shop_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:shop_name:nk]'>
+            <groupfilter function='member' level='[none:shop_name:nk]' member='&quot;セブンイレブン&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:shop_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[cnt:reg_cnt:qk]</rows>
+        <cols>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:Reg Cnt (ビン):qk]</cols>
+        <show-full-range>
+          <column>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[Reg Cnt (ビン)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='レシートの登録回数'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k4lseu1q7iizr1ck0ruw0p4qtyw].[none:shop_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='1回購入金額'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='1回購入金額' width='384'>
+      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
+      UCGEiFFvs7ZG2/uj+XkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='384' name='レシートの登録回数' width='384'>
+      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
+      XJe9AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
